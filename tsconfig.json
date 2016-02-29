@@ -7,9 +7,24 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "outDir": "./app"
   },
+  "filesGlob": [
+    "./dev/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
   "exclude": [
+<<<<<<< HEAD
     "node_modules"
   ]
+=======
+    "node_modules",
+    "typings/main",
+    "typings/main.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
+>>>>>>> 5dc7ba0317870b4db8774665e01f8aadbd3ac5f0
 }
