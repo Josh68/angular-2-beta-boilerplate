@@ -1,1 +1,1 @@
-body{padding:0;margin:0;font-family:Roboto,Arial,sans-serif;font-size:16px}
+body{padding:20px 0 0;margin:0 auto;font-family:Roboto,Arial,sans-serif;font-size:16px;max-width:960px}.box,.game,.setup{padding:20px;border:1px solid #000;border-radius:8px;max-width:50%}.box h2,.game h2,.setup h2{margin-top:0}.box+.box{margin-top:20px}input{border-radius:4px}.game{background-color:#ffa07a;border-color:#ffa07a}.game.solved{background-color:#90ee90;border-color:#90ee90}.congrats{display:none}.congrats.solved{display:block}.setup{background-color:#90ee90;border-color:#90ee90}

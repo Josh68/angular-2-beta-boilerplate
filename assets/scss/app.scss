@@ -1,6 +1,42 @@
 body {
-  padding: 0;
-  margin: 0;
+  padding: 20px 0 0;
+  margin: 0 auto;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
+  max-width: 960px;
+}
+.box {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    max-width: 50%;
+    h2 {
+        margin-top: 0;
+    }
+    &+& {
+        margin-top: 20px;
+    }
+}
+input {
+    border-radius: 4px;
+}
+.game {
+    @extend .box;
+    background-color: lightsalmon;
+    border-color: lightsalmon;
+    &.solved {
+        background-color: lightgreen;
+        border-color: lightgreen;
+    }
+}
+.congrats {
+    display: none;
+    &.solved {
+        display: block;
+    }
+}
+.setup {
+    @extend .box;
+    background-color: lightgreen;
+    border-color: lightgreen;
 }
