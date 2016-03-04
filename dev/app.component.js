@@ -16,7 +16,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <section class=\"parent\">\n            <h2>This is the parent component</h2>\n            <h4>Please enter your name</h4>\n            <input type=\"text\" [(ngModel)]=\"name\">\n            <br><br>\n            <section class=\"child\">\n                <my-property-binding [myName]=\"name\" [myAge] = \"26\" (hobbiesChanged)=\"hobbies = $event\">\n                </my-property-binding>\n            </section>\n            <p>My hobbies are: {{hobbies}}</p>\n        </section>\n    ",
+            template: "\n        <section class=\"parent\">\n            <h2>This is the parent component</h2>\n            <ul>\n                <li>\n                    <label for=\"nameInput\">Please enter your name</label>\n                    <input type=\"text\" [(ngModel)]=\"name\" name=\"nameInput\">\n                </li>\n                <li>\n                     <label for=\"ageInput\">Please enter your age</label>\n                     <input type=\"text\" [(ngModel)]=\"age\" name=\"ageInput\">\n                </li>\n            </ul>\n            <section class=\"child\">\n                <my-property-binding [myName]=\"name\" [myAge]=\"age\" (hobbiesChanged)=\"hobbies = $event\">\n                </my-property-binding>\n            </section>\n            <p>My hobbies are: {{hobbies}}</p>\n        </section>\n    ",
             directives: [property_binding_component_1.PropertyBindingComponent]
         })
     ], AppComponent);

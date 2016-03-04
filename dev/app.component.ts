@@ -6,11 +6,18 @@ import {PropertyBindingComponent} from './property-binding.component';
     template: `
         <section class="parent">
             <h2>This is the parent component</h2>
-            <h4>Please enter your name</h4>
-            <input type="text" [(ngModel)]="name">
-            <br><br>
+            <ul>
+                <li>
+                    <label for="nameInput">Please enter your name</label>
+                    <input type="text" [(ngModel)]="name" name="nameInput">
+                </li>
+                <li>
+                     <label for="ageInput">Please enter your age</label>
+                     <input type="text" [(ngModel)]="age" name="ageInput">
+                </li>
+            </ul>
             <section class="child">
-                <my-property-binding [myName]="name" [myAge] = "26" (hobbiesChanged)="hobbies = $event">
+                <my-property-binding [myName]="name" [myAge]="age" (hobbiesChanged)="hobbies = $event">
                 </my-property-binding>
             </section>
             <p>My hobbies are: {{hobbies}}</p>

@@ -12,7 +12,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require('angular2/core');
 var PropertyBindingComponent = (function () {
     function PropertyBindingComponent() {
-        this.name = '';
+        this.name = 'Jim';
         this.age = 20;
         this.hobbiesChanged = new core_1.EventEmitter();
     }

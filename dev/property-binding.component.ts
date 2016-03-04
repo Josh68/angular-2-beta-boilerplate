@@ -18,7 +18,7 @@ import {Event} from "../node_modules/typescript/lib/lib";
 })
 
 export class PropertyBindingComponent {
-    name = '';
+    name = 'Jim';
     @Input('myAge') age = 20;
     hobbiesChanged = new EventEmitter<string>();
     onHobbiesChanged(hobbies: string) {
