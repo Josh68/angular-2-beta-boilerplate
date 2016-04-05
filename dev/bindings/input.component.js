@@ -12,15 +12,22 @@ var InputComponent = (function () {
         this.myself = { name: '', age: '' };
         this.isFilled = false;
         this.isValid = false;
-        this.onKeyup = function () {
-            this.isFilled = (this.myself.name !== '' && this.myself.age !== '');
-            this.isValid = (this.isFilled && /^\d{1,3}$/.test(this.myself.age) && /^\D+$/.test(this.myself.name));
-        };
+        this.submitted = new core_1.EventEmitter();
     }
+    InputComponent.prototype.onKeyup = function () {
+        this.isFilled = (this.myself.name !== '' && this.myself.age !== '');
+        this.isValid = (this.isFilled && /^\d{1,3}$/.test(this.myself.age) && /^\D+$/.test(this.myself.name));
+    };
+    ;
+    InputComponent.prototype.onSubmit = function () {
+        this.submitted.emit(this.myself);
+    };
     InputComponent = __decorate([
         core_1.Component({
             selector: 'my-input',
-            template: "\n        <h1>Your details, please</h1>\n        <div>\n            <label for=\"name\">Your name</label>\n            <input type=\"text\" id=\"name\" [(ngModel)]=\"myself.name\" (keyup)=\"onKeyup()\">\n        </div>\n        <div>\n            <label for=\"age\">Your age</label>\n            <input type=\"text\" id=\"age\" [(ngModel)]=\"myself.age\" (keyup)=\"onKeyup()\">\n        </div>\n        <br>\n        <div>Filled out: {{isFilled ? 'Yes' : 'No'}}</div>\n        <div>Valid: {{isValid ? 'Yes' : 'No'}}</div>\n        <br>\n        <button [disabled]=\"!isValid\">Submit</button>\n    "
+            template: "\n        <h1>Your details, please</h1>\n        <div>\n            <label for=\"name\">Your name</label>\n            <input type=\"text\" id=\"name\" [(ngModel)]=\"myself.name\" (keyup)=\"onKeyup()\">\n        </div>\n        <div>\n            <label for=\"age\">Your age</label>\n            <input type=\"text\" id=\"age\" [(ngModel)]=\"myself.age\" (keyup)=\"onKeyup()\">\n        </div>\n        <br>\n        <div>Filled out: {{isFilled ? 'Yes' : 'No'}}</div>\n        <div>Valid: {{isValid ? 'Yes' : 'No'}}</div>\n        <br>\n        <button [disabled]=\"!isValid\" (click)=\"onSubmit()\">Submit</button>\n    ",
+            inputs: ['myself'],
+            outputs: ['submitted']
         })
     ], InputComponent);
     return InputComponent;
