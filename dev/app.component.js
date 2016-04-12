@@ -1,33 +1,23 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") return Reflect.decorate(decorators, target, key, desc);
-    switch (arguments.length) {
-        case 2: return decorators.reduceRight(function(o, d) { return (d && d(o)) || o; }, target);
-        case 3: return decorators.reduceRight(function(o, d) { return (d && d(target, key)), void 0; }, void 0);
-        case 4: return decorators.reduceRight(function(o, d) { return (d && d(target, key, o)) || o; }, desc);
-    }
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('angular2/core');
-var input_component_1 = require("./bindings/input.component");
-var confirm_component_1 = require("./bindings/confirm.component");
+var shopping_list_component_1 = require('./shopping-list/shopping-list.component');
 var AppComponent = (function () {
     function AppComponent() {
-        this.myself = { name: '', age: '' };
-        this.confirmedMyself = { name: '', age: '' };
     }
-    AppComponent.prototype.onSubmit = function (myself) {
-        this.myself = { name: myself.name, age: myself.age };
-    };
-    AppComponent.prototype.onConfirm = function (myself) {
-        this.confirmedMyself = { name: myself.name, age: myself.age };
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n        <div class=\"container\">\n            <my-input (submitted)=\"onSubmit($event)\" [myself]=\"confirmedMyself\"></my-input>\n        </div>\n        <div class=\"container\">\n            <my-confirm (confirmed)=\"onConfirm($event)\" [myself]=\"myself\"></my-confirm>\n        </div>\n    ",
-            directives: [input_component_1.InputComponent, confirm_component_1.ConfirmComponent]
+            template: "\n        <header>\n            <div class=\"brand\">Shopping List</div>\n        </header>\n        <div class=\"main\">\n            <shopping-list></shopping-list>\n        </div>\n    ",
+            directives: [shopping_list_component_1.ShoppingListComponent]
         })
     ], AppComponent);
     return AppComponent;
-})();
+}());
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
