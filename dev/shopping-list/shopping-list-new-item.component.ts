@@ -2,6 +2,7 @@
  * Created by jas on 4/5/16.
  */
 import {Component, EventEmitter} from 'angular2/core';
+import {ListItem} from '../list-item';
 
 @Component({
     selector: 'shopping-list-new-item',
@@ -23,7 +24,7 @@ export class ShoppingListNewItemComponent {
         name: '',
         amount: 0
     };
-    itemAdded = new EventEmitter<{name: string, amount: number}>();
+    itemAdded = new EventEmitter<ListItem>();
     addItem() {
         this.itemAdded.emit(this.item);
     }
