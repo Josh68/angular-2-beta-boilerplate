@@ -31,7 +31,7 @@ import {ListItem} from '../list-item';
 
 export class ShoppingListComponent {
     listItems = new Array<ListItem>();
-    selectedItem: ListItem
+    selectedItem: ListItem;
     onItemAdded(item: ListItem) {
         this.listItems.push({
             name: item.name,
