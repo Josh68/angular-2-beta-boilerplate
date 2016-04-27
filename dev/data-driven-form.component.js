@@ -16,21 +16,31 @@ var DataDrivenFormComponent = (function () {
         this.user = { email: '', password: '' };
     }
     DataDrivenFormComponent.prototype.onSubmit = function (form) {
+        console.log(this.myForm);
+        this.user = this.myForm.value;
     };
     DataDrivenFormComponent.prototype.ngOnInit = function () {
         this.myForm = this._formBuilder.group({
             'email': ['', common_1.Validators.required],
-            'password': ['', common_1.Validators.required],
+            'password': ['', common_1.Validators.compose([
+                    common_1.Validators.required,
+                    hasNumbers
+                ])],
             'confirmPassword': ['', common_1.Validators.required]
         });
     };
     DataDrivenFormComponent = __decorate([
         core_1.Component({
             selector: 'my-data-driven-form',
-            template: "\n        <h2>Sign-up form</h2>\n        <form [ngFormModel]=\"myForm\" (ngSubmit)=\"onSubmit()\">\n            <div>\n                <label for=\"email\">Email</label>\n                <input [ngFormControl]=\"myForm.controls['email']\" type=\"text\" id=\"email\">\n                <span class=\"validation-error\">Not valid</span>\n            </div>\n            <div>\n                <label for=\"password\">Password</label>\n                <input [ngFormControl]=\"myForm.controls['password']\" type=\"text\" id=\"password\">\n                <span class=\"validation-error\">Not valid</span>\n            </div>\n            <div>\n                <label for=\"confirm-password\">Confirm password</label>\n                <input [ngFormControl]=\"myForm.controls['confirmPassword']\" type=\"text\" id=\"confirm-password\">\n                <span class=\"validation-error\">Not valid</span>\n            </div>\n            <button type=\"submit\">Submit</button>\n        </form>\n        <h2>You submitted</h2>\n        <div>Mail: {{user.email}}</div>\n        <div>Password: {{user.password}}</div>\n    "
+            template: "\n        <h2>Sign-up form</h2>\n        <form [ngFormModel]=\"myForm\" (ngSubmit)=\"onSubmit()\" #formVar=\"ngForm\">\n            <div>\n                <label for=\"email\">Email</label>\n                <input [ngFormControl]=\"myForm.controls['email']\" type=\"text\" id=\"email\" #email=\"ngForm\">\n                <span class=\"validation-error\" *ngIf=\"!email.valid\">Not valid</span>\n            </div>\n            <div>\n                <label for=\"password\">Password</label>\n                <input [ngFormControl]=\"myForm.controls['password']\" type=\"text\" id=\"password\" #password=\"ngForm\">\n                <span class=\"validation-error\" *ngIf=\"!password.valid\">Not valid</span>\n            </div>\n            <div>\n                <label for=\"confirm-password\">Confirm password</label>\n                <input [ngFormControl]=\"myForm.controls['confirmPassword']\" type=\"text\" id=\"confirm-password\" #confirmPassword=\"ngForm\">\n                <span class=\"validation-error\" *ngIf=\"!confirmPassword.valid\">Not valid</span>\n            </div>\n            <button type=\"submit\" [disabled]=\"!formVar.valid\">Submit</button>\n        </form>\n        <h2>You submitted</h2>\n        <div>Mail: {{user.email}}</div>\n        <div>Password: {{user.password}}</div>\n    "
         })
     ], DataDrivenFormComponent);
     return DataDrivenFormComponent;
 }());
 exports.DataDrivenFormComponent = DataDrivenFormComponent;
+function hasNumbers(control) {
+    if (!control.value.match('\\d+')) {
+        return { noNumbers: true };
+    }
+}
 //# sourceMappingURL=data-driven-form.component.js.map

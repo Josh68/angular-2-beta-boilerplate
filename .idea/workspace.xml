@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad21a2db-7687-4583-b427-2ed12e5d203a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/mock-shopping-list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/mock-shopping-list.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/mock-shopping-list.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list-item.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list-item.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list-item.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list-new-item.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list-new-item.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list-new-item.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list.component.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list.service.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/shopping-list.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/shopping-list/tsconfig.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/list-item.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/list-item.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/list-item.ts" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/app.component.js" afterPath="$PROJECT_DIR$/dev/app.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/app.component.js.map" afterPath="$PROJECT_DIR$/dev/app.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/app.component.ts" afterPath="$PROJECT_DIR$/dev/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/data-driven-form.component.js" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/data-driven-form.component.js.map" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/data-driven-form.component.ts" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.ts" />
     </list>
     <ignored path="angular-2-beta-boilerplate.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,58 +29,7 @@
     <favorites_list name="angular-2-beta-boilerplate" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dev/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <marker date="1461733253461" expanded="true" signature="180:241" placeholder="..." />
-                <marker date="1461733253461" expanded="true" signature="268:339" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data-driven-form.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/data-driven-form.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="e#41#89#0" expanded="true" />
-                <marker date="1461734082079" expanded="true" signature="318:1159" placeholder="..." />
-                <marker date="1461734082079" expanded="true" signature="336:558" placeholder="..." />
-                <marker date="1461734082079" expanded="true" signature="576:810" placeholder="..." />
-                <marker date="1461734082079" expanded="true" signature="828:1093" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="promise.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/angular2/src/facade/promise.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -150,8 +84,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="760" />
-    <option name="y" value="107" />
+    <option name="x" value="450" />
+    <option name="y" value="31" />
     <option name="width" value="1327" />
     <option name="height" value="1000" />
   </component>
@@ -233,12 +167,12 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app.component.ts" />
-              <option name="myItemType" value="com.intellij.lang.typescript.compiler.ui.projectView.TypeScriptNestingTreeNode" />
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -349,19 +283,19 @@
       <workItem from="1460440239252" duration="3103000" />
       <workItem from="1461303378730" duration="155000" />
       <workItem from="1461303560547" duration="2369000" />
-      <workItem from="1461732877278" duration="1323000" />
+      <workItem from="1461732877278" duration="4027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16899000" />
+    <option name="totallyTimeSpent" value="19603000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="760" y="107" width="1327" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="450" y="31" width="1327" height="1000" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23798627" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23798627" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17865169" sideWeight="0.49714285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18045112" sideWeight="0.50285715" order="7" side_tool="true" content_ui="tabs" />
@@ -710,14 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/list-item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dev/shopping-list/mock-shopping-list.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -758,6 +684,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dev/data-driven-form.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#41#89#0" expanded="true" />
+            <marker date="1461765954990" expanded="true" signature="345:1351" placeholder="..." />
+            <marker date="1461765954990" expanded="true" signature="363:622" placeholder="..." />
+            <marker date="1461765954990" expanded="true" signature="640:917" placeholder="..." />
+            <marker date="1461765954990" expanded="true" signature="935:1257" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <marker date="1461733253461" expanded="true" signature="180:241" placeholder="..." />
+            <marker date="1461733253461" expanded="true" signature="268:339" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -774,29 +726,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/dev/list-item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <marker date="1461733253461" expanded="true" signature="180:241" placeholder="..." />
-            <marker date="1461733253461" expanded="true" signature="268:339" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/data-driven-form.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="e#41#89#0" expanded="true" />
-            <marker date="1461734082079" expanded="true" signature="318:1159" placeholder="..." />
-            <marker date="1461734082079" expanded="true" signature="336:558" placeholder="..." />
-            <marker date="1461734082079" expanded="true" signature="576:810" placeholder="..." />
-            <marker date="1461734082079" expanded="true" signature="828:1093" placeholder="..." />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
