@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad21a2db-7687-4583-b427-2ed12e5d203a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/list-item.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/list-item.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/list-item.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/data-driven-form.component.js" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/data-driven-form.component.js.map" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/data-driven-form.component.ts" afterPath="$PROJECT_DIR$/dev/data-driven-form.component.ts" />
-    </list>
+    <list default="true" id="ad21a2db-7687-4583-b427-2ed12e5d203a" name="Default" comment="" />
     <ignored path="angular-2-beta-boilerplate.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -283,12 +275,12 @@
       <workItem from="1460440239252" duration="3103000" />
       <workItem from="1461303378730" duration="155000" />
       <workItem from="1461303560547" duration="2369000" />
-      <workItem from="1461732877278" duration="4027000" />
+      <workItem from="1461732877278" duration="4121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19603000" />
+    <option name="totallyTimeSpent" value="19697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="450" y="31" width="1327" height="1000" extended-state="0" />
